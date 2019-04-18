@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stories and Legends (PAGE title) </title>
+    <meta charset="UTF-8">
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+  </head>
+  
+  <body>
+    
+    <!-- blog post template -->
+    <template id="blog-template">
+      <div style="border:thin solid red;">
+        <div>
+          <h1 class="title">
+            <!-- <a id="link" href=""> </a> -->
+          </h1>
+        </div>
+        <div>
+          <p class="description"></p>
+        </div>
+      </div>
+    </template>
+
+    <div id="posts"></div>
+  </body>
+  <script>
+    const blogPosts = [
+      {
+        title: "first post",
+        description: "sprint 1 boiiii",
+        link: "yoyo",
+      },
+      {
+        title: "second post",
+        description: "sprint 2 boiiii",
+        link: "ygnfjondfognd",
+      },
+      {
+        title: "third post",
+        description: "sprint 3 boiiii",
+        link: "ydfgodfmpdgfdgfdhhdoyo",
+      }
+    ];
+    function appendPosts(templateId) {
+      const posts = document.getElementById('posts');
+      const fragment = document.getElementById(templateId);
+      
+      // Clear out the content from the ul
+      posts.innerHTML = '';
+      
+      // Loop over the books and modify the given template
+      blogPosts.forEach(post => {
+        // Create an instance of the template content
+        const instance = document.importNode(fragment.content, true);
+        // Add relevant content to the template
+        instance.querySelector('.title').innerHTML = post.title;
+        instance.querySelector('.description').innerHTML = post.description;
+        // Append the instance ot the DOM
+        posts.appendChild(instance);
+      });  
+    }
+    appendPosts('blog-template');
+  </script>
+</html>
