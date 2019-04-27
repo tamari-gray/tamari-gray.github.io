@@ -1,65 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Stories and Legends (PAGE title) </title>
-    <meta charset="UTF-8">
-    <link href="styles/main.css" rel="stylesheet" type="text/css">
-  </head>
-  
-  <body>
-    
-    <!-- blog post template -->
-    <template id="blog-template">
-      <div style="border:thin solid red;">
-        <div>
-          <h1 class="title">
-            <!-- <a id="link" href=""> </a> -->
-          </h1>
-        </div>
-        <div>
-          <p class="description"></p>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hello Bulma!</title>
+		<link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="blogPost.js"></script>
+        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+	</head>
+	<body>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container center">
+          <a href="index.html">
+            <figure class="image is-128x128">
+                <img src="https://seeklogo.com/images/K/konoha_leaf-logo-277E238E29-seeklogo.com.png">
+              </figure>
+          </a>
         </div>
       </div>
-    </template>
-
-    <div id="posts"></div>
-  </body>
-  <script>
-    const blogPosts = [
-      {
-        title: "first post",
-        description: "sprint 1 boiiii",
-        link: "yoyo",
-      },
-      {
-        title: "second post",
-        description: "sprint 2 boiiii",
-        link: "ygnfjondfognd",
-      },
-      {
-        title: "third post",
-        description: "sprint 3 boiiii",
-        link: "ydfgodfmpdgfdgfdhhdoyo",
-      }
-    ];
-    function appendPosts(templateId) {
-      const posts = document.getElementById('posts');
-      const fragment = document.getElementById(templateId);
-      
-      // Clear out the content from the ul
-      posts.innerHTML = '';
-      
-      // Loop over the books and modify the given template
-      blogPosts.forEach(post => {
-        // Create an instance of the template content
-        const instance = document.importNode(fragment.content, true);
-        // Add relevant content to the template
-        instance.querySelector('.title').innerHTML = post.title;
-        instance.querySelector('.description').innerHTML = post.description;
-        // Append the instance ot the DOM
-        posts.appendChild(instance);
-      });  
-    }
-    appendPosts('blog-template');
-  </script>
+    </section>
+    <section class="section has-background-light">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <a href="sprint1-cultural.html">
+              <div class="notification is-primary">
+                <h1 class="title">
+                  Core 1
+                </h1>
+                <p class="is-size-5">my values </p>
+              </div>
+            </a>
+          </div>
+          <div class="column">
+            <a href="sprint2-cultural.html">
+              <div class="notification is-primary">
+                <h1 class="title">
+                  Core 2
+                </h1>
+                <p class="is-size-5">reflections</p>
+              </div>
+            </a>
+          </div>
+          <div class="column">
+            <a href="technincalBlog.html">
+              <div class="notification is-primary">
+                <h1 class="title">
+                  technical blog
+                </h1>
+                <p class="is-size-5">ujhgfidbjgsojnfdg</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+	</body>
 </html>
