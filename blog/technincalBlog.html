@@ -12,16 +12,67 @@
         <!-- <link rel="stylesheet" href="styles/debug.css"> -->
 	</head>
 	<body>
-            <section class="hero">
-                    <div class="hero-body">
-                      <div class="container center">
-                        <a href="index.html">
-                          <figure class="image is-128x128">
-                              <img src="https://seeklogo.com/images/K/konoha_leaf-logo-277E238E29-seeklogo.com.png">
-                            </figure>
-                        </a>
-                      </div>
-                    </div>
-                  </section>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container center">
+                <a href="index.html">
+                  <figure class="image is-128x128">
+                      <img src="https://seeklogo.com/images/K/konoha_leaf-logo-277E238E29-seeklogo.com.png">
+                  </figure>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <h1 class="title is-1 center"> Displaing elements </h1>
+
+    <section class="section">
+      <div class="container">
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-4">
+            <div class="tile">
+              <div class="tile is-parent is-vertical">
+                <article class="tile is-child box has-background-warning ">
+                  <p class="title"> Display: inline </p>
+                  <P>hi everybody im <span class="inline-example dr-nick"> dr nick</span> and im displayed as an inline element</P>
+                </article>
+                <article class="tile is-child box has-background-warning">
+                  <p> Any height and width properties will have no effect.  Inline elements don’t start on a new line, they appear on the same line as the content and tags beside them.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="tile is-vertical is-4">
+            <div class="tile">
+              <div class="tile is-parent is-vertical ">
+                <article class="tile is-child box has-background-success ">
+                  <!-- Put any content you want -->
+                  <p class="title"> Display: inline-block </p>
+                  <P>hi everybody im <span class="inline-block-example dr-nick"> dr nick</span> and im displayed as an inline-block element</P>
+                </article>
+                <article class="tile is-child box has-background-success">
+                  <!-- Put any content you want -->
+                  <p>The element is formatted as an inline element, but you can give it height and width values</p>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="tile is-vertical is-4">
+            <div class="tile">
+              <div class="tile is-parent is-vertical">
+                <article class="tile is-child box has-background-primary">
+                  <!-- Put any content you want -->
+                  <p class="title"> Display <span style="font-weight: bold;"> Block </span></p>
+                  <P>hi everybody im <span class="block-example dr-nick"> dr nick </span> and im displayed as a block element</P>
+                </article>
+                <article class="tile is-child box has-background-primary">
+                  <p>A block element always starts on a new line, and fills up the horizontal space of its container.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 	</body>
 </html>

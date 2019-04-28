@@ -3,4 +3,23 @@
     justify-content: center;
     align-items: center;
 }
+
+.dr-nick{
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+  font-weight: bold ;
+  border: thin solid grey;
+}
+
+.inline-example{
+  display: inline;
+  
+}
+.inline-block-example{
+  display: inline-block;
+}
+.block-example{
+  display: block;
+}
             
