@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hello Bulma!</title>
+		<link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="blogPost.js"></script>
+        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+	</head>
+	<body>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container center">
+                <a href="index.html">
+                  <figure class="image is-128x128">
+                      <img src="https://seeklogo.com/images/K/konoha_leaf-logo-277E238E29-seeklogo.com.png">
+                  </figure>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <h1 class="title is-1 center"> JS && DOM </h1>
+
+    <section class="section">
+      <div class="container">
+        <div class="tile is-ancestor is-vertical">
+          <div class="tile">
+            <div class="tile is-parent">
+              <div class="tile is-child box ">
+                <p class="title center">HTML & CSS</p> 
+                <p>html is like a basic house plan. It determines how many rooms there are,how many storys, windows. while css determines how big the house is, what colors are in it, what materials are used to build it.</p>
+              </div>
+              <div class="tile is-child box ">
+                <p class="title center ">Functions</p>
+                <p>a function is a block of code that executes a certain task. this is usefull because you can call this function whenever you want to complete that task. rather then writing out that block of code every time you want to call it.</p>
+              </div>
+            </div>
+          </div>
+          <div class="tile">
+            <div class="tile is-parent is-4 is-vertical ">
+              <h1 class="title center">Control flow</h1>
+              <div class="tile is-child box">
+                <p>control flow is the order that code gets executed. It gets read from top to bottom and how you code changes the flow of execution. </p>
+              </div>
+              <div class="tile is-child box">
+                <p> when i workout, i will execute a warm up, then execute the workout, then strectch. its predefined to optimise the tasks.</p>
+              </div>
+            </div>
+            <div class="tile is-parent is-4 is-vertical ">
+              <h1 class="title center">Loops</h1>
+              <div class="tile is-child box">
+                <p>loops are blocks of code that repeat until a certain condition is met. this could be to find a specific property in an array and return that value.</p>
+              </div>
+              <div class="tile is-child box">
+                <p>for example when im eating i execute chewing until the condition "is well chewed" is true then i can execute swallow.</p>
+                
+              </div>
+              <div class="is-child tile box">
+                <span class="center" style="display: block; ">
+                  let wellChewed = 10; <br>
+                    for (var i = 0; i>=wellChewed; i++ ){ <br>
+                        if (wellChewed == i){ <br>
+                            swallow(); <br>
+                        } <br>
+                    }  <br>
+                </span>
+              </div>
+            </div>
+            <div class="tile is-parent is-4 is-vertical ">
+              <h1 class="title center">DOM</h1>
+              <div class="tile is-child box">
+                <p>the dom is everythihng in the browser window. its an object that turns your code into a website, and you can access all of its many properties. though the main ones you will interact with are html elements.</p>
+              </div>
+              <div class="tile is-child box">
+                <p>listening to a click event on an form submit button so you can execute submit form and send the data away.</p>
+              </div>
+            </div>
+          </div>
+          <div class="tile">
+            
+            <div class="tile is-parent is-vertical">
+              <div class="tile box is-child">
+                <p class="title">
+                  [ Arrays ]
+                </p>
+                <p>You access data from arrays by saying the array name and its position. e.g  let name = namesArray[1].name</p>
+              </div>
+              <div class="tile box is-child">
+                <p class="title">
+                  { Objects }
+                </p>
+                <p>
+                    you access data objects by diving into their children using "." and the property name e.g let name = parentName.child.name
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	</body>
+</html>
