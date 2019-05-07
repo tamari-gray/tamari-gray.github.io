@@ -1,5 +1,5 @@
-import { posts } from './posts.js';
-import './blogPost.js'
+import { posts } from "./posts.js";
+import "./blogPost.js";
 
 // window.addEventListener('load', () => {
 //     getPosts();
@@ -15,11 +15,10 @@ import './blogPost.js'
 //         main.appendChild(element)
 //     });
 // }
-const main = document.querySelector('main');
-let test = document.getElementById('blog-post');
+
+const main = document.querySelector("main");
+let test = document.getElementById("blog-post");
 
 main.appendChild(test.content);
 
-posts.forEach(element => {
-    
-});
+posts.forEach(element => {});
